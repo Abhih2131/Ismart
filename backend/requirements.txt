@@ -3,7 +3,7 @@ uvicorn
 httpx
 pydantic
 python-dotenv
-supabase-py
+supabase
 pandas
 scikit-learn
 openai
