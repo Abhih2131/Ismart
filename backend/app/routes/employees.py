@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import APIRouter, HTTPException
 from supabase import create_client, Client
 import os
