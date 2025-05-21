@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ismart-api
+    env: python
+    region: singapore
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: bash backend/start.sh
+    plan: free
+    envVars:
+      - key: SUPABASE_URL
+        value: https://gbbgmkfjydvqgtzfrapn.supabase.co
+      - key: SUPABASE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJ...
+      - key: SUPABASE_TABLE
+        value: Emp_Master
